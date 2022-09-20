@@ -45,7 +45,7 @@ a {
 }
 
 #hero .hero {
-    max-width: 1000px;
+    max-width: 1200px;
     justify-content: flex-start;
     margin: 0 auto;
     padding: 0;
@@ -68,6 +68,7 @@ a {
     animation-delay: 2.5s;
 } 
 #hero h1:nth-child(3) {
+    animation: text-reveal-name ease forwards;
     animation-delay: 3.5s;
 } 
 
@@ -129,4 +130,10 @@ a {
     color: white;
 }
 }
+
+@keyframes text-reveal-name{
+    100% {
+        color: crimson;
+    }
+    }
 /* End Keyframes */ 
