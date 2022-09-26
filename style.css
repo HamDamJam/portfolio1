@@ -23,6 +23,22 @@ a {
     justify-content: center;
 }
 
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+p {
+    font-size: 1.4rem;
+    margin-top: 5px;
+    line-height: 2.5rem;
+    font-weight: 300;
+    letter-spacing: .05rem;
+    color: #000;
+}
+
+
 /* Hero Section */ 
 #hero {
     background-image: url(./img/hero-bg.png); 
@@ -58,18 +74,18 @@ a {
     position: relative;
     color: transparent;
     animation: text-reveal 0.5s ease forwards;
-    animation-delay: 1.5s;
+    animation-delay: 1s;
 }
 
 #hero h1:nth-child(1) {
-    animation-delay: 1.5s;
+    animation-delay: 1s;
 } 
 #hero h1:nth-child(2) {
-    animation-delay: 2.5s;
+    animation-delay: 2s;
 } 
 #hero h1:nth-child(3) {
     animation: text-reveal-name ease forwards;
-    animation-delay: 3.5s;
+    animation-delay: 3s;
 } 
 
 #hero h1 span {
@@ -80,16 +96,16 @@ a {
     width: 0;
     background-color: crimson;
     animation: text-reveal-box 1s ease;
-    animation-delay: 1s;
+    animation-delay: .5s;
 }
 #hero h1:nth-child(1) span {
-    animation-delay: 1s;
+    animation-delay: .5s;
 }
 #hero h1:nth-child(2) span {
-    animation-delay: 2s;
+    animation-delay: 1.5s;
 }
 #hero h1:nth-child(3) span {
-    animation-delay: 3s;
+    animation-delay: 2.5s;
 }
 
 #hero .cta {
@@ -113,9 +129,6 @@ a {
 /* End Hero Section */
 
 /* Service Section */
-#services {
-
-}
 
 #services .service {
     flex-direction: column;
@@ -139,9 +152,62 @@ a {
     color: crimson;
 }
 
-#services .service-top p {
-    
+
+
+#services .service-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
 }
+
+#services .service-item {
+    flex-basis: 80%;
+    display: flex;
+    background-image: url(/img/img-1.png);
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+    position: relative;
+    padding: 30px;
+    margin: 10px 5%;
+    background-size: cover;
+    z-index: 1;
+    overflow: hidden;
+}
+
+#services .service-item::after {
+    content: '';
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    opacity: .6;
+    z-index: -1;
+}
+
+#services .service-bottom .icon {
+    height: 80px;
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+#services .service-item h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+#services .service-item p {
+    color: #fff;
+    text-align: left;
+}
+
 /* End Service Section */
 
 
