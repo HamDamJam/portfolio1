@@ -52,6 +52,25 @@ p {
     color: crimson;
 }
 
+.cta {
+    display: inline-block;
+    padding: 10px 30px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid crimson;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 30px;
+    transition: .3s ease;
+    transition-property: background-color, color;
+}
+
+.cta:hover {
+    color: white;
+    background-color: crimson;
+}
+
 /* Hero Section */ 
 #hero {
     background-image: url(./img/hero-bg.png); 
@@ -151,11 +170,19 @@ p {
     padding: 100px 0;
 }
 
+#services .service-top {
+    margin: 100px 300px;
+}
+
+#services .service-top p {
+    text-align: start;
+}
+
 #services .service-bottom {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: row;
     margin-top: 50px;
 }
 
@@ -281,7 +308,79 @@ p {
     opacity: .6;
 }
 
+#projects .project-img img {
+    transition: .3s ease transform;
+    
+}
+
+#projects .project-items:hover {
+    cursor: pointer;
+}
+
+#projects .project-items:hover .project-img img {
+    transform: scale(1.1);
+}
 /* End Projects Section */
+
+/* About Section */
+#about .about {
+    flex-direction: column-reverse;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 20px;
+}
+
+#about .col-left {
+    width: 250px;
+    height: 350px;
+}
+
+#about .col-right {
+    width: 100%;
+}
+
+#about .col-right h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    margin-bottom: 10px;
+}
+
+#about .col-right p {
+    margin-bottom: 20px;
+}
+
+#about .col-right .cta {
+    color: #000;
+    margin-bottom: 50px;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 10px 20px;
+}
+
+#about .col-left .about-img{
+    position: relative;
+    border: 10px solid white;
+    height: 100%;
+    width: 100%;
+}
+
+#about .col-left .about-img::after {
+content: '';
+position: absolute;
+border: 7px solid crimson;
+left: -33px;
+top: 19px;
+height: 98%;
+width: 98%;
+z-index: -1;
+}
+
+
+/* End About Section */
+
+
 
 
 
