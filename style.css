@@ -202,7 +202,7 @@ p {
     overflow: hidden;
 }
 
-#services .service-item::after {
+.service-item::after {
     content: '';
     background-color: black;
     height: 100%;
@@ -232,6 +232,10 @@ p {
     text-align: left;
 }
 
+.service-bottom .service-item:hover h2 p{
+    transform: scale(1.05);
+}
+
 /* End Service Section */
 
 /* Projects Section */
@@ -239,7 +243,7 @@ p {
     flex-direction: column;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 100px 0;
+    padding: 20px 0;
 }
 
 #projects .projects-header h1 {
@@ -380,7 +384,41 @@ z-index: -1;
 
 /* End About Section */
 
+/* Contact Section */
+#contact .contact {
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+}
 
+#contact .contact-items {
+    width: 100%;
+}
+
+#contact .contact-item{
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 10px 0 #000;
+}
+
+.contact .icon {
+    width: 70px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+#contact .project-info h1{
+    
+}
+/* End Contact Section */
 
 
 
