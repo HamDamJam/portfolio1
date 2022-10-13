@@ -9,6 +9,7 @@
 html {
     font-size: 10px;
     font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
 }
 a {
     text-decoration: none;
@@ -83,6 +84,7 @@ p {
 #header .header {
     min-height: 8vh;
     background-color: rgba(31, 30, 30, 0.24);
+    transition: .3s ease background-color;
 }
 
 #header .nav-bar {
@@ -517,11 +519,11 @@ z-index: -1;
     flex-direction: column;
     max-width: 1200px;
     margin: 0 auto;
-    align-items: center;
+    width: 90%;
 }
 
 #contact .contact-items {
-    width: 400px;
+    width: 100%;
 }
 
 #contact .contact-item{
@@ -741,13 +743,14 @@ z-index: -1;
         width: 100%;
         display: flex;
         flex-direction: row;
+        justify-content: space-evenly;
         margin: 0;
-        padding: 20px;
     }
 
     #contact .contact-item {
         margin: 20px;
         flex-direction: row;
+        width: 30%;
     }
 
     #contact .contact-item .icon {
